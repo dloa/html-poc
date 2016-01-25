@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Alexandria Librarian</title>
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+        <link href="assets/css/main.css" rel="stylesheet">
+    </head>
+    <body>
+        <div id="app">
+            <div id="sidebar">
+                <ul class="sidebar-nav">
+                    <li class="sidebar-brand">
+                        <a href="#">
+                            <object type="image/svg+xml" data="assets/svg/logo-text.svg" class="logo"></object>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="index.html">Dashboard</a>
+                    </li>
+                    <li>
+                        <a href="publish.html">Publish</a>
+                    </li>
+                    <li class="active">
+                        <a href="#">IPFS</a>
+                    </li>
+                    <li>
+                        <a href="florincoin.html">Florincoin</a>
+                    </li>
+                    <li>
+                        <a href="libraryd.html">Libraryd</a>
+                    </li>
+                    <li>
+                        <a href="preferences.html">Preferences</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div id="content" class="dashboard">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-12">
+
+                            <div class="section ipfs active">
+                                <div class="clearfix">
+                                    <div class="pull-left">
+                                        <h4 class="title">IPFS</h4>
+                                    </div>
+                                    <div class="pull-right">
+                                        <input type="checkbox" id="checked" class="toggle hidden" checked/>
+                                        <label for="checked" class="lbl"></label>   
+                                    </div>
+                                </div>
+                                <div class="stats">
+                                    <div class="row">
+                                        <div class="col col-sm-6">
+                                            <!-- Peers -->
+                                            <div class="peers">
+                                                <object type="image/svg+xml" data="assets/svg/business-16px_hierarchy-53.svg" class="logo"></object>
+                                                <span class="text"><strong>7</strong> peers connected</span>
+                                            </div>
+                                        </div>
+                                        <div class="col col-sm-6">
+                                            <!-- Pins -->
+                                            <div class="pinned">
+                                                <object type="image/svg+xml" data="assets/svg/location-16px_pin.svg" class="logo"></object>
+
+                                                <span class="text"><strong>118</strong> files pinned <span class="muted">(25.31 GB)</span></span>
+                                            </div>
+                                        </div>
+                                        <div class="col col-sm-6">
+                                            <!-- Upload -->
+                                            <div class="upload">
+                                                <object type="image/svg+xml" data="assets/svg/arrows-16px-1_tail-up.svg" class="logo"></object>
+                                                <span class="text"><strong>1.33 KB/s</strong> uploading <span class="muted">(69 MB)</span></span>
+                                            </div>
+
+                                        </div>
+                                        <div class="col col-sm-6">
+                                            <!-- Download -->
+                                            <div class="download">
+                                                <object type="image/svg+xml" data="assets/svg/arrows-16px-1_tail-down.svg" class="logo"></object>
+                                                <span class="text"><strong>1.33 KB/s</strong> uploading <span class="muted">(69 MB)</span></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="detail">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga ex molestiae id itaque sint, architecto pariatur omnis, officiis ipsum necessitatibus reiciendis rem quo quisquam aliquam consequatur inventore fugiat. Maiores, necessitatibus.</p>
+                                </div>
+                            </div> <!-- /ipfs -->
+                            
+
+                            <div class="section ipfs">
+                                <form class="form-inline">
+                                    <button type="" class="btn btn-default">Browse local</button>
+                                    <p class="margin">or</p>
+                                    <div class="form-group pull-right">
+                                        <input type="text" class="form-control ipfs" id="" placeholder="Enter IPFS hash or URL">
+                                        <button type="" class="btn btn-primary btn-pin-file">Pin file</button>
+                                    </div>
+                                </form>
+                                
+                                <table class="table pinned-files">
+                                    <thead>
+                                        <tr>
+                                            <th>File name</th>
+                                            <th>Hash</th>
+                                            <th>File size</th>
+                                            <th>Seeds</th>
+                                            <th>Unpin</th>
+                                        </tr>
+                                    </thead>
+
+                                    <colgroup>
+                                        <col class="">
+                                        <col class="">
+                                        <col class="">
+                                        <col class="">
+                                        <col class="col-sm-1">
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <td>DJ Day.flac</td>
+                                            <td>d9729feb74992cc3482b350163a1a010</td>
+                                            <td>186 MB</td>
+                                            <td>17</td>
+                                            <td class="unpin">
+                                                <a href="#" class="svg btn">
+                                                    <object type="image/svg+xml" data="assets/svg/location-16px-e_pin-remove.svg"></object>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>DJ Day.flac</td>
+                                            <td>d9729feb74992cc3482b350163a1a010</td>
+                                            <td>186 MB</td>
+                                            <td>17</td>
+                                            <td class="unpin">
+                                                <a href="#" class="svg btn">
+                                                    <object type="image/svg+xml" data="assets/svg/location-16px-e_pin-remove.svg"></object>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>DJ Day.flac</td>
+                                            <td>d9729feb74992cc3482b350163a1a010</td>
+                                            <td>186 MB</td>
+                                            <td>17</td>
+                                            <td class="unpin">
+                                                <a href="#" class="svg btn">
+                                                    <object type="image/svg+xml" data="assets/svg/location-16px-e_pin-remove.svg"></object>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div> <!-- /ipfs -->
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="assets/js/jquery-1.11.3.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script>
+            $(function () {
+                $('[data-toggle="tooltip"]').tooltip()
+            })
+        </script>
+    </body>
+</html>
