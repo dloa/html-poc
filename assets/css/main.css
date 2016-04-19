@@ -99,11 +99,7 @@ button::-moz-focus-inner {
   text-decoration: none;
   color: rgba(83, 139, 212, 0.5); }
 
-.sidebar-nav li a:hover {
-  text-decoration: none;
-  color: #538bd4; }
-
-.sidebar-nav li a:active {
+.sidebar-nav li a:hover, .sidebar-nav li a:active {
   text-decoration: none;
   color: #538bd4; }
 
@@ -306,15 +302,39 @@ form .form-last {
 .progress-container .progress {
   margin-bottom: 0; }
 
-.progress {
+.overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  z-index: 1050;
+  background-color: rgba(255, 255, 255, 0.9); }
+
+.overlay .container {
+  margin-top: 100px;
+  background: white;
+  border-radius: 4px;
+  padding: 25px; }
+
+.overlay .progress {
   height: 5px;
   margin-top: 7px;
-  box-shadow: none;
-  background-color: rgba(83, 139, 212, 0.1); }
+  margin-bottom: 7px;
+  box-shadow: none; }
 
-.progress .progress-bar {
+.overlay .progress .progress-bar {
   box-shadow: none;
   background-color: #538bd4; }
+
+.overlay .status {
+  padding: 15px;
+  border: 1px solid #efefef;
+  border-radius: 4px;
+  margin-top: 25px;
+  margin-bottom: 25px; }
 
 /* Console */
 .console-output {

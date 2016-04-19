@@ -51,10 +51,7 @@
             display: block;
             text-decoration: none;
             color: rgba($primary, .5);
-            &:hover {
-                text-decoration: none;
-                color: $primary;
-            }
+            &:hover,
             &:active {
                 text-decoration: none;
                 color: $primary;

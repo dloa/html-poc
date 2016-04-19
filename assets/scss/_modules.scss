@@ -187,14 +187,37 @@ form {
     }
 }
 
-.progress {
-    height: 5px;
-    margin-top: 7px;
-    box-shadow: none;
-    background-color: rgba($primary, .1);
-    .progress-bar {
+.overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;overflow-x: hidden;
+    overflow-y: auto;
+    z-index: 1050;
+    background-color: rgba(white, .9);
+    .container {
+        margin-top: 100px;
+        background: white;
+        border-radius: 4px;
+        padding: 25px;
+    }
+    .progress {
+        height: 5px;
+        margin-top: 7px;
+        margin-bottom: 7px;
         box-shadow: none;
-        background-color: $primary;
+        .progress-bar {
+            box-shadow: none;
+            background-color: $primary;
+        }
+    }
+    .status {
+        padding: 15px;
+        border: 1px solid $ltgray;
+        border-radius: 4px;
+        margin-top: 25px;
+        margin-bottom: 25px;
     }
 }
 
